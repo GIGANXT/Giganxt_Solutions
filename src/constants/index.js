@@ -399,7 +399,7 @@ export const benefits = [
     id: "3",
     title: "AI & Machine Learning Solutions",
     text: "Develop AI-powered solutions like recommendation systems, fraud detection, and automation models.",
-    backgroundUrl: "./assets/benefits/card-1.svg",
+    backgroundUrl: "src/assets/benefits/card-1.svg",
     iconUrl: benefitImage9,
     imageUrl: benefitImage2,
     light: true,
