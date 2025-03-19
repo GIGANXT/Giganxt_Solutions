@@ -11,7 +11,7 @@ import {
   benefitImage10,
   benefitImage11,
 
-  benefitscard1,
+  benefitCard1,
   benefitsCard2,
   benefitsCard,
   benefitsCard4,
