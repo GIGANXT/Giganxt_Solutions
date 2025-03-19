@@ -29,7 +29,8 @@ const Benefits = () => {
           {benefits.map((item) => (
             <div
               className="relative p-0.5 bg-no-repeat bg-cover overflow-hidden group rounded-lg shadow-lg md:max-w-[22rem] w-full sm:w-[20rem] lg:w-[24rem]"
-              style={{ backgroundImage: url(${item.backgroundUrl}) }}
+              style={{ backgroundImage: `url(${item.backgroundUrl})` }}
+
               key={item.id}
             >
               {/* Content inside card */}
