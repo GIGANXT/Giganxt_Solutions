@@ -13,7 +13,7 @@ import {
 
   benefitscard-1,
   benefitsCard2,
-  benefits/card-3,
+  benefitsCard,
   benefitsCard4,
   benefitsCard5, 
   benefitsCard6,
