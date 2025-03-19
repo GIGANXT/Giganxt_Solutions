@@ -340,7 +340,7 @@ export const benefits = [
     text: "Create modern, responsive, and SEO-friendly websites tailored to businesses and personal brands.",
     backgroundUrl: benefitCard1,
     iconUrl: benefitImage6,
-    imageUrl: service3,
+    imageUrl: service6,
     head_1: "Web Development Process",
     process: [
       { stage: "Requirement Gathering & Analysis", description: "Understand project scope, goals, and target audience." },
