@@ -12,11 +12,11 @@ import {
   benefitImage11,
 
   benefitCard1,
-  benefitsCard2,
-  benefitsCard,
-  benefitsCard4,
-  benefitsCard5, 
-  benefitsCard6,
+  benefitCard2,
+  benefitCard,
+  benefitCard4,
+  benefitCard5, 
+  benefitCard6,
 
   chromecast,
   disc02,
