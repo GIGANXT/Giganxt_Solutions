@@ -1,49 +1,43 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
-import card1 from "../assets/benefits/card-1.svg";
-import card2 from "../assets/benefits/card-2.svg";
-import card3 from "../assets/benefits/card-3.svg";
-import card4 from "../assets/benefits/card-4.svg";
-import card5 from "../assets/benefits/card-5.svg";
-import card6 from "../assets/benefits/card-6.svg";
 
 const services = [
   {
     title: "Web Development",
     description: "Custom web applications built with modern technologies and best practices.",
     icon: "🌐",
-    background: card1
+    background: "/assets/benefits/card-1.svg"
   },
   {
     title: "Mobile Development",
     description: "Native and cross-platform mobile applications for iOS and Android.",
     icon: "📱",
-    background: card2
+    background: "/assets/benefits/card-2.svg"
   },
   {
     title: "UI/UX Design",
     description: "User-centered design solutions that enhance user experience and engagement.",
     icon: "🎨",
-    background: card3
+    background: "/assets/benefits/card-3.svg"
   },
   {
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and deployment solutions for your applications.",
     icon: "☁️",
-    background: card4
+    background: "/assets/benefits/card-4.svg"
   },
   {
     title: "AI Integration",
     description: "Integration of artificial intelligence and machine learning solutions.",
     icon: "🤖",
-    background: card5
+    background: "/assets/benefits/card-5.svg"
   },
   {
     title: "Consulting",
     description: "Expert technical consulting and project management services.",
     icon: "💡",
-    background: card6
+    background: "/assets/benefits/card-6.svg"
   }
 ];
 
