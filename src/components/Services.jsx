@@ -61,36 +61,41 @@ const Services = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="relative bg-n-7 rounded-3xl p-6 overflow-hidden min-h-[300px]"
+              className="relative rounded-3xl p-6 overflow-hidden min-h-[300px]"
               style={{
+                backgroundColor: '#15131D', // Fallback background color
                 border: `1px solid ${cardColors[index].primary}33`,
-                background: `linear-gradient(140deg, rgba(20, 20, 22, 0.95) 0%, rgba(20, 20, 22, 0.95) 100%), 
-                             radial-gradient(circle at top left, ${cardColors[index].primary}22, transparent 70%),
-                             radial-gradient(circle at bottom right, ${cardColors[index].secondary}22, transparent 70%)`,
+                boxShadow: `0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)`,
+                background: `
+                  linear-gradient(140deg, rgba(21, 19, 29, 0.95) 0%, rgba(21, 19, 29, 0.95) 100%),
+                  radial-gradient(circle at top left, ${cardColors[index].primary}22, transparent 70%),
+                  radial-gradient(circle at bottom right, ${cardColors[index].secondary}22, transparent 70%)
+                `,
               }}
             >
               {/* Decorative corner */}
               <div 
-                className="absolute top-0 right-0 w-[100px] h-[100px] opacity-20"
+                className="absolute top-0 right-0 w-[100px] h-[100px]"
                 style={{
                   background: `linear-gradient(45deg, transparent 50%, ${cardColors[index].primary} 100%)`,
+                  opacity: 0.2,
                 }}
               ></div>
 
               {/* Bottom line accent */}
               <div 
-                className="absolute bottom-0 left-0 h-[1px] opacity-30"
+                className="absolute bottom-0 left-0 h-[1px] w-full"
                 style={{
                   background: `linear-gradient(90deg, transparent, ${cardColors[index].primary}, transparent)`,
-                  width: '100%',
+                  opacity: 0.3,
                 }}
               ></div>
               
               {/* Content */}
               <div className="relative z-10">
                 <div className="text-4xl mb-4">{service.icon}</div>
-                <h4 className="h4 mb-2">{service.title}</h4>
-                <p className="body-2 text-n-3">{service.description}</p>
+                <h4 className="text-2xl font-semibold text-white mb-2">{service.title}</h4>
+                <p className="text-gray-400 text-sm md:text-base">{service.description}</p>
               </div>
             </motion.div>
           ))}
