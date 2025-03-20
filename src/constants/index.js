@@ -358,7 +358,7 @@ export const benefits = [
     id: "1",
     title: "App Development",
     text: "Build high-performance mobile and web apps with intuitive UI/UX and cross-platform compatibility.",
-    backgroundUrl: benefitCard2,
+    backgroundUrl: "/src/assets/benefits/card-1.svg",
     iconUrl: benefitImage7,
     imageUrl: benefitImage2,
     light: true,
