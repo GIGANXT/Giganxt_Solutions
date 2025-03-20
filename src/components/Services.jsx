@@ -2,42 +2,69 @@ import Section from "./Section";
 import Heading from "./Heading";
 import { motion } from "framer-motion";
 
+const CardBackground = () => (
+  <svg 
+    className="absolute inset-0 w-full h-full opacity-10" 
+    preserveAspectRatio="none" 
+    width="384" 
+    height="366" 
+    viewBox="0 0 384 366" 
+    fill="none" 
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path 
+      vectorEffect="non-scaling-stroke" 
+      d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" 
+      stroke="white" 
+      strokeOpacity="0.15" 
+      strokeWidth="2"
+    />
+    <path 
+      vectorEffect="non-scaling-stroke" 
+      d="M32 1H319.453C328.037 1 336.238 4.5601 342.1 10.832L374.648 45.6545C380.015 51.3966 383 58.9629 383 66.8225V334C383 351.121 369.121 365 352 365H32C14.8792 365 1 351.121 1 334V32C1 14.8792 14.8792 1 32 1Z" 
+      stroke="url(#paint0_linear_333_9188)" 
+      strokeOpacity="0.85" 
+      strokeWidth="2"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_333_9188" x1="192" y1="0" x2="192" y2="366" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#33CEFF"/>
+        <stop offset="0.562842" stopColor="#D633FF" stopOpacity="0"/>
+      </linearGradient>
+    </defs>
+  </svg>
+);
+
 const services = [
   {
     title: "Web Development",
     description: "Custom web applications built with modern technologies and best practices.",
-    icon: "🌐",
-    background: "/assets/benefits/card-1.svg"
+    icon: "🌐"
   },
   {
     title: "Mobile Development",
     description: "Native and cross-platform mobile applications for iOS and Android.",
-    icon: "📱",
-    background: "/assets/benefits/card-2.svg"
+    icon: "📱"
   },
   {
     title: "UI/UX Design",
     description: "User-centered design solutions that enhance user experience and engagement.",
-    icon: "🎨",
-    background: "/assets/benefits/card-3.svg"
+    icon: "🎨"
   },
   {
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and deployment solutions for your applications.",
-    icon: "☁️",
-    background: "/assets/benefits/card-4.svg"
+    icon: "☁️"
   },
   {
     title: "AI Integration",
     description: "Integration of artificial intelligence and machine learning solutions.",
-    icon: "🤖",
-    background: "/assets/benefits/card-5.svg"
+    icon: "🤖"
   },
   {
     title: "Consulting",
     description: "Expert technical consulting and project management services.",
-    icon: "💡",
-    background: "/assets/benefits/card-6.svg"
+    icon: "💡"
   }
 ];
 
@@ -59,16 +86,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="relative bg-n-7 rounded-3xl p-6 border border-n-1/10 hover:border-n-1/20 transition-all duration-300 overflow-hidden"
             >
-              {/* Background SVG */}
-              <div 
-                className="absolute inset-0 w-full h-full opacity-10"
-                style={{
-                  backgroundImage: `url(${service.background})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  backgroundRepeat: 'no-repeat'
-                }}
-              />
+              <CardBackground />
               
               {/* Content */}
               <div className="relative z-10">
