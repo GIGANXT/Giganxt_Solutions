@@ -26,6 +26,7 @@ const App = () => {
         <Hero />
         <Benefits />
         {/* <Project /> */}
+        <Route path="/About" element={<about-us />} />
 
         <Testimonials/>
         <Roadmap />
