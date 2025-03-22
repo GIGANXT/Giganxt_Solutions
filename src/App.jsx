@@ -39,7 +39,6 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
-      <Footer /> {/* Include Footer if it should appear on all pages */}
     </Router>
   );
 };
