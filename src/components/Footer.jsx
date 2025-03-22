@@ -32,7 +32,7 @@ const Footer = () => {
               </h4>
               <ul className="list-none mt-4">
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                     <Link to="/about-us">About Us</Link>
+                     <Link to="Pages/About.jsx">About Us</Link>
                 </li>
               </ul>
             </div>
