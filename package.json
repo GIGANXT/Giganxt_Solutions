@@ -1,6 +1,7 @@
 {
   "name": "giganxt",
   "homepage": "/",
+  "about-us": "/about-us",
   "private": true,
   "version": "0.0.0",
   "type": "module",
