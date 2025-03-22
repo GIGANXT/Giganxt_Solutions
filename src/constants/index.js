@@ -144,12 +144,12 @@ export const navigation = [
   {
     id: "1",
     title: "Services",
-    url: "#features",
+    url: "#Services",
   },
   {
     id: "2",
     title: "Project",
-    url: "#project",
+    url: "#roadmap",
   },
   {
     id: "3",
