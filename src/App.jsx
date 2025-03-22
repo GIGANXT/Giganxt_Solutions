@@ -17,18 +17,19 @@ import About from "./Pages/About"; // The About component you just created
 
 const App = () => {
   return (
-     <Router>
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer /> {/* Include Footer if it should appear on all pages */}
-    </Router>
+
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
         <Benefits />
         {/* <Project /> */}
+             <Router>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+      <Footer /> {/* Include Footer if it should appear on all pages */}
+    </Router>
         <Testimonials/>
         <Roadmap />
         <FAQs/>
