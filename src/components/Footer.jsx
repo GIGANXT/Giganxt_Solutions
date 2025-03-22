@@ -3,6 +3,7 @@ import Section from "./Section";
 import { socialMedia } from "../constants";
 import styles from "../constants/style";
 import { logo } from "../assets";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
