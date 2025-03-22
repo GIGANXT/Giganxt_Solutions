@@ -24,12 +24,7 @@ const App = () => {
         <Hero />
         <Benefits />
         {/* <Project /> */}
-    <Router>
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
-      <Footer /> {/* Include Footer if it should appear on all pages */}
-    </Router>
+
         <Testimonials/>
         <Roadmap />
         <FAQs/>
