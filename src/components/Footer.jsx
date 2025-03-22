@@ -20,7 +20,30 @@ const Footer = () => {
             </p>
           </div>
 
-
+          <div className="flex-[1.5] w-full flex flex-wrap justify-between md:mt-0 mt-10">
+            {/* Services Column */}
+            <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
+              <h4 className="font-bold text-[20px] leading-[27px] text-white">
+                Our Services
+              </h4>
+              <ul className="list-none mt-4">
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  Website Development
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  App Development
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  AI Integration
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  UI/UX Design
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                  Digital Marketing
+                </li>
+              </ul>
+            </div>
 
             {/* Company Column */}
             <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
@@ -31,8 +54,15 @@ const Footer = () => {
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
                   About Us
                 </li>
-
-
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  Our Team
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  Careers
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
+                  Blog
+                </li>
               </ul>
             </div>
 
@@ -44,6 +74,9 @@ const Footer = () => {
               <ul className="list-none mt-4">
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
                   contact@giganxt.me
+                </li>
+                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
+                  +91 9545258741
                 </li>
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
                   Chhatrapati Sambhaji Nagar, Maharashtra, India
