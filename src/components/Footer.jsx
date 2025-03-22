@@ -1,111 +1,80 @@
 import React from "react";
-import Section from "./Section";
-import { socialMedia } from "../constants";
 import styles from "../constants/style";
 import { logo } from "../assets";
+import { socialMedia } from "../constants";
 
 const Footer = () => {
   return (
-    <Section crosses colorfulBorder className="!py-10 w-full px-6 md:px-16" id="footer">
-      <div className={`${styles.flexCenter} ${styles.paddingY} flex-col w-full`}>
-        <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
-          <div className="flex-1 flex flex-col justify-start mr-10">
-            <img
-              src={logo}
-              alt="Giganxt"
-              className="w-[250px] h-[100px] object-contain"
-            />
-            <p className={`${styles.paragraph} ml-4 mt-4 max-w-[312px]`}>
-              Empower Your Business With Giganxt Solution.
-            </p>
+    <footer className="w-full bg-black-100 text-white py-10 px-6 md:px-16">
+      <div className={`${styles.flexCenter} flex-col w-full`}>
+        {/* Logo and Tagline */}
+        <div className="flex flex-col items-center mb-8">
+          <img
+            src={logo}
+            alt="Your Startup Name"
+            className="w-[200px] h-[80px] object-contain"
+          />
+          <p className={`${styles.paragraph} mt-4 text-center max-w-[300px]`}>
+            Empowering your business with innovative solutions.
+          </p>
+        </div>
+
+        {/* Links Section */}
+        <div className="flex flex-wrap justify-center gap-8 md:gap-16 mb-8">
+          {/* Quick Links */}
+          <div className="flex flex-col items-center">
+            <h4 className="font-bold text-lg mb-4">Quick Links</h4>
+            <ul className="text-center">
+              <li className="mb-2 hover:text-secondary cursor-pointer">Home</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">About Us</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">Services</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">Contact</li>
+            </ul>
           </div>
 
-          <div className="flex-[1.5] w-full flex flex-wrap justify-between md:mt-0 mt-10">
-            {/* Services Column */}
-            <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-              <h4 className="font-bold text-[20px] leading-[27px] text-white">
-                Our Services
-              </h4>
-              <ul className="list-none mt-4">
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  Website Development
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  App Development
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  AI Integration
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  UI/UX Design
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                  Digital Marketing
-                </li>
-              </ul>
-            </div>
+          {/* Services */}
+          <div className="flex flex-col items-center">
+            <h4 className="font-bold text-lg mb-4">Services</h4>
+            <ul className="text-center">
+              <li className="mb-2 hover:text-secondary cursor-pointer">Web Development</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">App Development</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">AI Solutions</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">UI/UX Design</li>
+            </ul>
+          </div>
 
-            {/* Company Column */}
-            <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-              <h4 className="font-bold text-[20px] leading-[27px] text-white">
-                Company
-              </h4>
-              <ul className="list-none mt-4">
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  About Us
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  Our Team
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  Careers
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                  Blog
-                </li>
-              </ul>
-            </div>
-
-            {/* Contact Column */}
-            <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
-              <h4 className="font-bold text-[20px] leading-[27px] text-white">
-                Contact Us
-              </h4>
-              <ul className="list-none mt-4">
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  contact@giganxt.me
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  +91 9545258741
-                </li>
-                <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer">
-                  Chhatrapati Sambhaji Nagar, Maharashtra, India
-                </li>
-              </ul>
-            </div>
+          {/* Contact Info */}
+          <div className="flex flex-col items-center">
+            <h4 className="font-bold text-lg mb-4">Contact Us</h4>
+            <ul className="text-center">
+              <li className="mb-2 hover:text-secondary cursor-pointer">contact@startup.com</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">+91 123 456 7890</li>
+              <li className="mb-2 hover:text-secondary cursor-pointer">City, State, Country</li>
+            </ul>
           </div>
         </div>
 
-        <div className="w-full flex justify-between items-center md:flex-row flex-col pt-6 border-t border-t-[#3F3E45]">
-          <p className="text-center text-[15px] leading-[27px] text-white">
-            Copyright Ⓒ {new Date().getFullYear()} Giganxt Solutions. All Rights Reserved.
+        {/* Social Media and Copyright */}
+        <div className="w-full flex flex-col md:flex-row justify-between items-center pt-6 border-t border-t-[#3F3E45]">
+          <p className="text-center text-sm mb-4 md:mb-0">
+            © {new Date().getFullYear()} Your Startup Name. All Rights Reserved.
           </p>
 
-          <div className="flex flex-row md:mt-0 mt-6">
-            {socialMedia.map((social, index) => (
+          {/* Social Media Icons */}
+          <div className="flex gap-4">
+            {socialMedia.map((social) => (
               <img
                 key={social.id}
                 src={social.icon}
                 alt={social.id}
-                className={`w-[25px] h-[25px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"
-                  }`}
+                className="w-6 h-6 cursor-pointer hover:opacity-80"
                 onClick={() => window.open(social.link)}
               />
             ))}
           </div>
         </div>
       </div>
-    </Section>
+    </footer>
   );
 };
 
