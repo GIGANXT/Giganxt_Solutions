@@ -10,7 +10,7 @@ import Roadmap from "./components/Roadmap";
 import Services from "./components/Services";
 import Testimonials from "./components/Testimonials";
 import Project from "./components/Project";
-import About from "./components/About"; // The About component you just created
+import About from "./Pages/About"; // The About component you just created
 
 
 
