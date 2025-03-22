@@ -4,6 +4,7 @@ import { socialMedia } from "../constants";
 import styles from "../constants/style";
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
+import About from "../Pages/About
 
 const Footer = () => {
   return (
