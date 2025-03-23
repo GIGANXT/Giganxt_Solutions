@@ -4,7 +4,7 @@ import { socialMedia } from "../constants";
 import styles from "../constants/style";
 import { logo } from "../assets";
 import { Link } from "react-router-dom";
-import About from "../Pages/About";
+
 
 const Footer = () => {
   return (
@@ -24,7 +24,6 @@ const Footer = () => {
 
           <div className="flex-[1.5] w-full flex flex-wrap justify-between md:mt-0 mt-10">
             {/* Services Column */}
-            
 
             {/* Company Column */}
             <div className="flex flex-col ss:my-0 my-4 min-w-[150px]">
@@ -33,7 +32,7 @@ const Footer = () => {
               </h4>
               <ul className="list-none mt-4">
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                     <Link to="/About">About Us</Link>
+                  <Link to="about">About Us</Link> {/* Use Link for navigation */}
                 </li>
               </ul>
             </div>
