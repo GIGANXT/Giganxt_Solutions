@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import { giganxt } from "../assets";
@@ -33,9 +33,9 @@ const Header = () => {
         openNavigation ? "bg-n-8" : "bg-n-8/90 backdrop-blur-sm"
       }`}
     ><div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={giganxt} width={300} height={40} alt="Brainwave" />
-        </a>
+        <Link to="/" className="block w-[12rem] xl:mr-8" onClick={() => window.scrollTo(0, 0)}>
+          <img src={giganxt} width={300} height={40} alt="Giganxt" />
+        </Link>
 
         {/* Navigation Section */}
         <nav

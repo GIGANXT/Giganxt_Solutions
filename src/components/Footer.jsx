@@ -32,7 +32,7 @@ const Footer = () => {
               </h4>
               <ul className="list-none mt-4">
                 <li className="font-normal text-[16px] leading-[24px] text-dimWhite hover:text-secondary cursor-pointer mb-4">
-                  <Link to="about">About Us</Link> {/* Use Link for navigation */}
+                  <Link to="/about" onClick={() => window.scrollTo(0, 0)}>About Us</Link> {/* Use Link for navigation with scroll to top */}
                 </li>
               </ul>
             </div>
